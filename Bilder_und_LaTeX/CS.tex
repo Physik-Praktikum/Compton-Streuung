@@ -110,10 +110,10 @@ Jetzt können 2 Spezialfälle unterschieden werden:
 \end{itemize}
 
 \subsection{Wirkungsquerschnitt}
-Der Wirkungsquerschnitt $\sigma$ macht eine Aussage über die Wechselwirkungswahrscheinlichkeit der Photonen mit Materie. Für die kinematische Betrachtung der Compton-Streuung ist der differentielle Wirkungsquerschnitt $\frac{d\sigma}{d\Omega}$, also der Wirkungsquerschnitt pro Raumwinkelelement $d\Omega = \sin(\vartheta) \, d\vartheta \, d\varphi$, durch die Klein-Nishina-Formel gegeben:
+Der Wirkungsquerschnitt $\sigma$ macht eine Aussage über die Wechselwirkungswahrscheinlichkeit der Photonen mit Materie. Für die kinematische Betrachtung der Compton-Streuung ist der differentielle Wirkungsquerschnitt $\frac{d\sigma}{d\Omega}$, also der Wirkungsquerschnitt pro Raumwinkelelement $d\Omega = \sin(\vartheta) \, \mathrm{d}\vartheta \, \mathrm{d}\varphi$, durch die Klein-Nishina-Formel gegeben:
 \begin{align}
 \label{klein}
-\sigma_{\Omega}^{KN}(\mu) = \frac{r_{e}^2}{2} \cdot \left(\frac{1}{1+\kappa(1-\mu}\right)^2 \cdot \left(\kappa(1-\mu)+\frac{1}{1+\kappa(1-\mu)}+\mu^2\right)
+\sigma_{\Omega}^{KN}(\mu) = \frac{r_{e}^2}{2} \cdot \left(\frac{1}{1+\kappa(1-\mu)}\right)^2 \cdot \left(\kappa(1-\mu)+\frac{1}{1+\kappa(1-\mu)}+\mu^2\right)
 \end{align}
 $r_{e}$ ist hierbei der klassische Elektronenradius ($r_{e} = 2,818 \cdot 10^{-15}$ m).
 \\\\
@@ -146,7 +146,7 @@ Die einzelnen Komponenten sind dabei durchnummeriert:
 \begin{itemize}
 \item (1) beweglicher Halter 
 \item (2) Goniometer zur Einstellung des Winkels ($0^{\circ} \leq \vartheta \leq 170^{\circ}$)
-\item (3) Streukörper (Stabe unterschiedlicher Dicke und Materialien)
+\item (3) Streukörper (Stäbe unterschiedlicher Dicke und Materialien)
 \item (4) Detektor (Halbleiterdetektor)
 \end{itemize}
 
@@ -159,7 +159,7 @@ Die einzelnen Komponenten sind dabei durchnummeriert:
 \item Bestimmung der Energie gestreuter Photonen: Messung der Energie gestreuter Photonen für unterschiedliche Winkel $\vartheta$: $30^{\circ}, 45^{\circ}, 60^{\circ}, 75^{\circ}, 90^{\circ}, 105^{\circ}, 120^{\circ}, 130^{\circ}$
 \item Bestimmung des Wirkungsquerschnitts: Graphische Darstellung des Messergebnisses und $\sigma_{\Omega}^{KN}$ über $\mu = \cos(\vartheta)$
 \item Einfluss des Streukörperdurchmessers: Aufnahme von Histogrammen für den minimalen Abstand zwischen Quelle und Streukörper bei $\vartheta= 60^{\circ}$ und graphische Darstellung der Zählrate $\dot{N}$ in Abhängigkeit vom Streukörperdurchmesser $d$
-\item Einfluss des Abstands zwischen Quelle und Streukörper: Untersuchung der Änderung des Messeffekts in Abhängigkeit des Abstands $l$ bei festem $\vartheta = 60^{\circ}$ und festem $d= 6$mm
+\item Einfluss des Abstands zwischen Quelle und Streukörper: Untersuchung der Änderung des Messeffekts in Abhängigkeit des Abstands $l$ bei festem $\vartheta = 60^{\circ}$ und festem $d= 8 $ mm
 \end{itemize}
 
 \section{Auswertung}
@@ -364,7 +364,7 @@ In dieser Grafik ist zu beachten, dass die Energieachse bereits bei $40$ keV beg
 \caption{Vergleich von Theorie und Experiment für $E (\mu)$, kontinuierlich}
 \end{figure}
 \\
-Gründe für die vorhandene Abweichung sind, dass die Detektorakzeptanz nie bei exakt $100$\% liegen kann. Außerdem wir die Bindungsenergie vernachlässigt. Dies hat Einfluss auf die Energiebilanzierung. Für die Energiekalibrierung wurden zudem nur 6 Werte verwendet. Eine Verwendung aller Peaks würde die Genauigkeit bzw. die Übereinstimmung mit der Theorie noch verbessern.
+Gründe für die vorhandene Abweichung sind, dass die Detektorakzeptanz nie bei exakt $100$\% liegen kann. Außerdem wird die Bindungsenergie vernachlässigt. Dies hat Einfluss auf die Energiebilanzierung (\ref{energiewinkel}). Für die Energiekalibrierung wurden zudem nur 6 Werte verwendet. Eine Verwendung aller Peaks würde die Genauigkeit bzw. die Übereinstimmung mit der Theorie noch verbessern. Dies ist vor allem als wichtige Fehlerquelle anzunehmen, da die Abweichung der Messung im Vergleich zur Theorie immer in die gleiche Richtung zeigt.
 \subsection{Bestimmung des Wirkungsquerschnitts}
 In diesem Punkt der Auswertung ist die Zählrate $\dot{N}$ der Streupeaks für die verschiedenen Winkel zu bestimmen und geeignet zu skalieren. Dies soll dann mit dem Wirkungsquerschnitt nach Klein und Nishina verglichen werden. Die Zählraten können, analog zur Auswertung der Messzeitbestimmung, über Gauß-Fits bestimmt werden. Die sich so ergebenden Zählraten sind folgende:
 \\\\
@@ -406,17 +406,22 @@ $\vartheta/^{\circ}$ & $\Delta \dot{N}/\text{s}^{-1}$ &  $\Delta \dot{N}$, normi
 \end{table}
 \\
 Die normierten Zählraten sind nun in Abbildung 13 im Intervall von $-0,643$ bis $0,866$ für $\mu$ dargestellt. Dies entspricht gerade dem Bereich von $\cos(130^{\circ})$ bis $\cos(30^{\circ})$. Zum Vergleich wurde ebenfalls der theoretische Wert, also der normierte Wirkungsquerschnitt nach Klein-Nishina, mit eingezeichnet:
-\newpage
+\\
 \begin{figure}[h!]\centering
 \includegraphics[scale=0.5]{wirkungsquerschnitt}
 \caption{Normierte Zählrate und normierter Wirkungsquerschnitt nach Klein-Nishina}
 \end{figure}
+\\
 Auch hier ist, ähnlich wie in Abbildung 12, ein Offset zu erkennen. Also nur der prinzipielle Verlauf beider Kurven ist gleich.
 \\\\
-Auch hier liegt die Begründung in einer Betrachtung der Detektorakzeptanz , genau wie in Punkt 5.4. Die inkohärente Streufunktion ist durch die Normierung irrelevant, also diese hat keinen Einfluss auf die Abweichung.
+Hier liegt die Begründung in einer Betrachtung der inkohärenten Streufunktion $S(E', \mu, Z)$. Diese ist nämlich durch ihre Abhängigkeit von $\mu$ vom Winkel $\vartheta$ abhängig und es gilt:
+\begin{align}
+\frac{\dot{N} (\vartheta)}{\dot{N} (\theta=30^{\circ})} = \frac{\sigma^{KN} (\vartheta)}{\sigma^{KN}(\vartheta=30^{\circ})} \cdot \frac{S (E', \cos(\vartheta), Z)}{S (E', \cos(\vartheta=30^{\circ}), Z)}
+\end{align}
+Der hintere Faktor, der durch die inkohärenten Streufunktionen bestimmt ist, ist außer für $\vartheta=30^{\circ}$ ungleich $1$. Da der theoretische Wirkungsquerschnitt sogar über dem experimentellen liegt, kann man also sagen, dass dieser Faktor in unserem Fall sogar immer $\geq 1$ ist.
 \subsection{Einfluss des Streukörperdurchmessers}
 Um die Abhängigkeit vom Streukörperdurchmesser zu untersuchen wurde die Messung für verschiedene $d$ bei minimalem Abstand von Quelle und Streukörper bei einem Winkel von $\vartheta = 60^{\circ}$ durchgeführt. Eine neue Untergrundmessung muss dafür nicht durchgeführt werden, da die Werte dafür aus der Messung zum Versuchsteil 5.4 und der Tabelle 4 entnommen werden können. Die Messzeit für die verschiedenen Durchmesser sind folgender Tabelle zu entnehmen:
-\newpage
+\\
 \begin{table}[h!]\centering
 \begin{tabular}{|c|c|}\hline
 Durchmesser $d$/mm & Messzeit t/s \\\hline
@@ -429,6 +434,7 @@ Durchmesser $d$/mm & Messzeit t/s \\\hline
 \end{tabular}
 \caption{Messzeiten für verschiedene Durchmesser $d$ des Streukörpers}
 \end{table}
+\\
 Die benötigten Zählraten und deren Unsicherheiten ergeben sich völlig analog zum Teilversuch 5.5 und sind hier dargestellt:
 \\
 \begin{table}[h!]\centering
@@ -445,18 +451,18 @@ Durchmesser $d$/mm & Zählrate $\dot{N}/\text{s}^{-1}$ & Unsicherheit $\Delta \d
 \end{table}
 \\
 Die Streukörperdurchmesser wird noch als mit einer Unsicherheit $\Delta d$ behaftet angenommen. Diese wird abgeschätzt zu: $\Delta d = 0,5 $ mm.
-\\\\
-Somit können die Werte aus Tabelle 9 graphisch dargestellt werden:
 \newpage
+Somit können die Werte aus Tabelle 9 graphisch dargestellt werden:
 \begin{figure}[h!]\centering
 \includegraphics[scale=0.5]{durchmesser}
 \caption{Zählraten in Abhängigkeit vom Streukörperdurchmesser $d$}
 \end{figure}
+\\
 Es ist deutlich zu erkennen, das die Zählrate für $d=10$ mm maximal ist. Für kleinere und größere Werte von $d$ werden die Zählraten geringer. Der Grund dafür ist, dass für kleine $d$ die Streuung geringer ist, im Grenzfall $d \rightarrow 0$ erhält man also das Resultat ohne Streukörper, bei dem gar keine Streuung vorliegt. Wenn also $d$ kleiner wird, erreichen immer weniger Photonen überhaupt den Detektor und die Zählrate nimmt ab. Für große $d$ nimmt aufgrund der erhöhten Dicke die Absorption der Photonen zu, sodass diese den Detektor nicht mehr erreichen können, die Zählrate sinkt also auch hier. Für das Maximum ist also das Verhältnis von der Effektivität der Streuung zur Absorption durch das Material maximal.
 
+\newpage
 \subsection{Einfluss des Abstands zwischen Quelle und Streukörper}
 Schließlich galt es die Abhängigkeit des Abstandes von Quelle und Streustab zu untersuchen. Die Messung wurde für den Aluminiumstab mit $d=8$ mm durchgeführt. Die Messzeiten für die einzelnen Abstände $l$ sind:
-\newpage
 \begin{table}[h!]\centering
 \begin{tabular}{|c|c|}\hline
 Abstand $l$/cm & Messzeit t/s \\\hline
@@ -498,11 +504,11 @@ Es kann nun das Verhalten für die Peakbreite $\sigma$ ausgewertet werden. Mit z
 Die Begründung für die erste Beobachtung ist eine Betrachtung des Winkels. Es ist nicht möglich die auf den Streukörper auftreffende Photonenstrahlung vollkommen punktförmig zu realisieren. Demzufolge kann man modellhaft folgende Abbildungen betrachten:
 \\
 \begin{figure}[h!]\centering
-\includegraphics[scale=0.37]{abstand1}
+\includegraphics[scale=0.4]{abstand1}
 \caption{Modell für kleine Abstände $l$}
 \end{figure}
 \begin{figure}[h!]\centering
-\includegraphics[scale=0.37]{abstand2}
+\includegraphics[scale=0.4]{abstand2}
 \caption{Modell für große Abstände $l$}
 \end{figure}
 \newpage
@@ -512,7 +518,7 @@ Es ist an diesen Grafiken also deutlich zu erkennen, dass der Winkel zwischen de
 \\\\
 Die zweite Beobachtung kann man unter Betrachtung von Emission, Detektion, Transmission und Streuung erklären.
 \\\\
-Da die Quelle eines zu berücksichtigende Ausdehnung im Vergleich zur Detektorgeometrie besitzt, kann maximal nur ein Anteil $I$ der Photonen den Detektor überhaupt erreichen:
+Da die Quelle eine zu berücksichtigende Ausdehnung im Vergleich zur Detektorgeometrie besitzt, kann maximal nur ein Anteil $I$ der Photonen den Detektor überhaupt erreichen:
 \begin{align}
 I = \frac{A_{\text{S}}}{4 \, \pi \, r_{\text{SQ}}^2}
 \end{align}
@@ -529,17 +535,18 @@ Die Erhöhung des Abstandes zwischen Quelle und Streukörper hat zur Folge, dass
 S(r) = 1- e^{-r\Sigma_{t}}
 \end{align}
 $\Sigma_{t}$ ist die totale Wirkungsquerschnittsdichte. Diese ist materialabhängig. Im nächsten Diagramm ist zu erkennen, wie sich dieses $\Sigma$ für Luft für verschiedene Photonenenergien $E'$ verhält:
-\newpage
+\\
 \begin{figure}[h!]\centering
 \includegraphics[scale=0.4]{sigma_luft}
 \caption{Wirkungsquerschnittsdichte $\Sigma$ in Abhängigkeit der Photonenenergie $E'$, entnommen aus \cite{Anleitung}}
 \end{figure}
+\newpage
 Für inkohärente Streuung ist das $\Sigma$ für Luft also sogar annähernd konstant ist, also unabhängig von $E'$.
 Hier ergibt sich also, dass die Transmission durch Luft und die Streuung an Teilchen der Luft die Zählrate mit zunehmendem Abstand senken.
 \\\\
 Letztendlich wird die Zählrate also vor allem durch Emission (Selbstabsorption), Transmission und Streuung vermindert, was auch experimentell (unter der Annahme, dass die Untergrundzählraten nicht signifikant voneinander abweichen) herausgefunden werden konnte. 
 
-
+\newpage
 
 
     % Bibliographie/Literaturverzeichnis
